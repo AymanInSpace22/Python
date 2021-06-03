@@ -20,3 +20,25 @@ while i < 3:
     print("Nope, try again << ")
   
 print("Goodbye!")
+
+
+
+
+
+# a simpler guessing game with unlimited tries
+roll = randint(1,6)
+flag = True
+while flag:
+  user_Guess = int(input("Guess a number bewteen 1 and 10; Or press 999 to quit << "))
+
+  if user_Guess == 999:
+    print("Thank you for playing!")
+    flag = False
+    break
+
+  if user_Guess == roll:
+    print("Well done!")
+    flag = False
+  else:
+    print("Nope, try again << ")
+    flag
