@@ -1,4 +1,6 @@
 import names
 
+count = 0
 for i in range(15):
-    print(names.get_full_name())
+    count += 1
+    print(str(count) + '.', names.get_full_name())
